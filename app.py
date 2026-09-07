@@ -11,7 +11,7 @@ def multi_language_translator(text, language):
     prompt = f"Translate the following text into {language}: {text}"
     
     response = client.models.generate_content(
-        model="gemini-2.5-flash",
+        model="gemini-3.5-flash",
         contents=prompt,
         config={
             "temperature": 0.3,
